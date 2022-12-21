@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        int mat,turkce,fzk;
+
+        Scanner grade = new Scanner(System.in);
+
+        System.out.println("mat notu girin");
+        mat = grade.nextInt();
+
+
+        System.out.println("turkce notu girin");
+        turkce = grade.nextInt();
+
+        System.out.println("fzk notu girin");
+        fzk = grade.nextInt();
+
+        int toplam = (mat + turkce + fzk );
+        double sonuc = (toplam / 3 );
+        System.out.println("Ortalamanız:" + sonuc );
+
+
+    }
+}
